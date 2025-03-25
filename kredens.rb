@@ -5,21 +5,21 @@
 class Kredens < Formula
   desc "Simple CLI tool to manage environment credentials"
   homepage "https://github.com/arturtamborski/kredens"
-  version "1.0.1"
+  version "1.0.2"
   license "XD"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arturtamborski/kredens/releases/download/v1.0.1/kredens_Darwin_x86_64.zip"
-      sha256 "abaa3c0af261a18c21941940974dc71556f4bc931a54020fc751e590449db8e8"
+      url "https://github.com/arturtamborski/kredens/releases/download/v1.0.2/kredens_Darwin_x86_64.zip"
+      sha256 "06f4a7e427043f3f5473421b26d78c49a4729405c4043d3994b0a21b59031bf1"
 
       def install
         bin.install "kredens"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arturtamborski/kredens/releases/download/v1.0.1/kredens_Darwin_arm64.zip"
-      sha256 "8489d0cfe6b76b04a626a8b39c80b146c524c3becce153553b1cee406078639a"
+      url "https://github.com/arturtamborski/kredens/releases/download/v1.0.2/kredens_Darwin_arm64.zip"
+      sha256 "f2fa67fba8dabe8066f9b4f69db85f8518e618505cfdd6d94d6b1082bc82c03e"
 
       def install
         bin.install "kredens"
@@ -30,8 +30,8 @@ class Kredens < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/arturtamborski/kredens/releases/download/v1.0.1/kredens_Linux_x86_64.zip"
-        sha256 "cd3aed7bd678720be226966f39a832503cf9427062376096ff900a69f3acd9da"
+        url "https://github.com/arturtamborski/kredens/releases/download/v1.0.2/kredens_Linux_x86_64.zip"
+        sha256 "b69024d5091c6a7eb91565ab58536c136e91f8eec40914ac78105761cc501c87"
 
         def install
           bin.install "kredens"
@@ -40,8 +40,8 @@ class Kredens < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/arturtamborski/kredens/releases/download/v1.0.1/kredens_Linux_arm64.zip"
-        sha256 "f2dcd24e0b2bb531754738301cd0e39789ed49de8d6209ec7233db0071f5dc0c"
+        url "https://github.com/arturtamborski/kredens/releases/download/v1.0.2/kredens_Linux_arm64.zip"
+        sha256 "4fa5fc783061a726cb2d0fbb49a229c259f3d21f70fe27a06e4b69eea32fb75e"
 
         def install
           bin.install "kredens"
